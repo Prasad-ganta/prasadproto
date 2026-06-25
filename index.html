@@ -6,15 +6,15 @@
     <title>Prasad Ganta</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      (function() {
+        emailjs.init({ publicKey: "YOUR_PUBLIC_KEY" });
+      })();
+    </script>
 </head>
 <body>
-    <div class="loading-screen">
-        <div class="loader">
-            <div class="scanner"></div>
-        </div>
-        <div class="boot-text" id="bootText"></div>
-    </div>
-
     <div class="container">
         <header>
             <div class="nav-container">
@@ -68,7 +68,7 @@
                     <div class="about-image">
                         <div class="profile-container">
                             <div class="profile-frame">
-                                <img src="C:\Users\ganta\OneDrive\Desktop\prasad-protofolia\prasad2.jpg" alt="Prasad Ganta" class="profile-img" id="profileImg">
+                                <img src="prasadprotofoliaimage.jpeg" alt="Prasad Ganta" class="profile-img" id="profileImg">
                                 <div class="profile-corner top-left"></div>
                                 <div class="profile-corner top-right"></div>
                                 <div class="profile-corner bottom-left"></div>
@@ -256,6 +256,8 @@
                     <div class="header-line"></div>
                 </div>
                 <div class="projects-grid">
+
+                    <!-- Bus Management System -->
                     <div class="project-card">
                         <div class="project-header">
                             <div class="project-icon">
@@ -274,6 +276,8 @@
                             <span class="tech-tag">MySQL</span>
                         </div>
                     </div>
+
+                    <!-- Diet Management System -->
                     <div class="project-card">
                         <div class="project-header">
                             <div class="project-icon">
@@ -291,6 +295,56 @@
                             <span class="tech-tag">Data Science</span>
                         </div>
                     </div>
+
+                    <!-- AI Stress Level Detector -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>AI Stress Level Detector</h3>
+                        </div>
+                        <div class="project-body">
+                            <p>Developed an AI-based Stress Detection and Management System that analyzes facial expressions and speech signals to detect stress levels in real time. Implemented CNN for facial emotion recognition and SVM with MFCC features for voice-based stress analysis. The system provides stress monitoring, relaxation suggestions, and user-friendly feedback through a Tkinter-based interface.</p>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">SVM</span>
+                            <span class="tech-tag">TensorFlow / Keras</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">MFCC</span>
+                            <span class="tech-tag">Speech Processing</span>
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">Tkinter</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Pandas</span>
+                        </div>
+                    </div>
+
+                    <!-- Context-Aware Chatbot -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3>Context-Aware Chatbot</h3>
+                        </div>
+                        <div class="project-body">
+                            <p>Developed a context-aware chatbot using Flask and an AI API that simulates a customer support assistant. The system understands user queries and generates meaningful responses, supporting multi-turn conversations for better interaction flow.</p>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Groq API</span>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
